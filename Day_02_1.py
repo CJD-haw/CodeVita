@@ -21,7 +21,7 @@ if n >= 3 or n <= 50:
     for i in range(n):
         balloons.append(input())
         if balloons[i] not in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ':
-            print('INVALID INPUT')
+            print('Invalid Input : enter 1st letter of ballon color')
             exit()
 
     balloon = [[b, 0, 0] for b in set(balloons)]
@@ -39,5 +39,5 @@ if n >= 3 or n <= 50:
             print(bal[0])
 
 else:
-    print('INVALID INPUT')
+    print('Invalid Input : balloon limit is from 3 to 50 only')
 
